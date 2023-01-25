@@ -1,0 +1,483 @@
+html {
+    height:100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    background: linear-gradient (rgb (255, 228, 196), rgb(231, 229, 223));
+    height: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background: linear-gradient(rgb(240, 208, 132), rgb(244, 231, 207));
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    box-shadow: 0px 3px 5px black;
+    position: fixed;
+    z-index: 1;
+   
+}
+
+#logo {
+    display: flex;
+    width: 30%;
+    font-family: 'amatic sc', Arial, Helvetica, sans-serif;
+    font-size: 2.4em;
+    font-weight: 700;
+    text-shadow: 0 0px 8px #4a0303;
+    flex: 1 1 30%;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.socials {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    width:30%;
+    justify-content: center;
+    padding: 8px;
+}
+
+.socials span a {
+    margin: 0 12px;
+    font-size: 20px;
+    transition-duration: 300ms;
+}
+
+.socials span a:hover {
+    font-size: 26px;
+}
+
+.deals {
+    background-color: rgb(173, 95, 245);
+    text-align: center;
+    height: 25px;
+    padding-top: 4px;
+    box-shadow: inset  0px -2px 2px black;
+    position: relative;
+    top: 60px;
+    z-index: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: right;
+    font-size: 20px;
+    color: black;
+
+   
+    width: 30%;
+}
+
+.menu a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+
+}
+
+.image-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-image {
+    /* width should be 100% in the mobile version */
+    width: 95%; 
+    z-index: -2;
+    height: 430px;
+    border-radius: 1.5%;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 17px black;
+}
+
+
+
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 25px;
+
+}
+.cards {
+    /* display: block; */
+    width: 95%;
+    border:  2px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    transition: 250ms box-shadow ease-in-out;
+    font-size: 120%;
+    line-height: 1.5em;  
+    text-align: justify; 
+    box-sizing: border-box;
+}
+
+/* the first line on every card */
+.title {
+    font-weight: 700;
+    font-size: 130%;
+    padding-left: 2em;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-image {
+    width: 50%;
+    border-radius: 8px;
+    float: left;
+    margin-right: 10px;
+
+}
+
+.cards:hover {
+    box-shadow: inset 0px 0px 4px black;
+}
+
+/* start of animation section for each card */
+@keyframes shop {
+    0% {
+        background-image: url('pics/braceletes.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+        }
+    45% {
+        background-image: url('pics/bottle.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    65% {
+        background-image: url('pics/candles.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    90% {
+        background-image: url('pics/earings.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    100% {
+        background-image: url('pics/earings.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+}
+
+@keyframes valentine {
+    0% {
+        background-image: url('pics/101.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+        }
+    40% {
+        background-image: url('pics/101.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    45% {
+        background-image: url('pics/108.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    60% {
+        background-image: url('pics/108.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    65% {
+        background-image: url('pics/106.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    90% {
+        background-image: url('pics/102.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    100% {
+        background-image: url('pics/102.jpg'); 
+        opacity: 1; 
+        background-size: 400px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+}
+
+@keyframes courses {
+    0% {background-image: url('pics/course1.jpg'); 
+        opacity: 1; 
+        background-size: 150%; 
+        background-repeat: no-repeat; 
+        background-position: center;
+        }
+    45% {
+        background-image: url('pics/course2.jpg'); 
+        opacity: 1; 
+        background-size: 150%; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    65% {
+        background-image: url('pics/chords.jpg'); 
+        opacity: 1; 
+        background-size: 100%; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    90% {
+        background-image: url('pics/making.jpg'); 
+        opacity: 1; 
+        background-size: 500px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    100% {
+        background-image: url('pics/making.jpg'); 
+        opacity: 1; 
+        background-size: 500px; 
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+}
+/* end of animation secion for each card */
+
+/* this is a class that will be given to an empty div that will be a square with the images of products */
+.shop {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    margin-right: 10px;
+    animation-name: shop;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    float: left;    
+}
+
+.valentine {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    margin-right: 10px;
+    animation-name: valentine;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    float: left;    
+}
+/* this is a class that will be given to an empty div that will be a square with the images of people doing macramee */
+
+.courses {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 10px;
+    animation-name: courses;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    float: left;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(17, 16, 16);
+    margin: 20px auto 0 auto;
+    color: rgb(255, 55, 0);
+    padding-top: 10px;
+}
+
+.footer-container {
+    display: flex;
+    align-content: space-between;
+}
+
+.socials {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    width:30%;
+    justify-content: center;
+    padding: 8px;
+}
+
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.socials-footer {
+    margin-right: 8px;   
+}
+
+.social-link {
+    margin: 3px 8px;
+}
+
+footer div .contacts img {
+    height: 50px;
+    flex-basis: 50px;
+    margin-left: 100px;
+}
+
+.contacts {
+    display: block;
+    color: rgb(255, 55, 0);
+    width: 40%;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    text-align:center;
+    justify-content: flex-end;
+}
+
+
+/* making the responsive vrsion */
+@media(max-width: 700px) {
+    nav {
+        display: block;
+        height: 180px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    .menu {
+        margin: 0 auto;
+    }
+
+    .menu a {
+        padding: 2px 5px 2px 5px;
+    }
+
+    .socials {
+        margin: 8px auto;
+        text-align: center;
+    }
+
+    
+    .deals {
+        background-color: rgb(173, 95, 245);
+        text-align: center;
+        height: 40px;
+        padding-top: 10px;
+        box-shadow: inset  0px -2px 2px black;
+        position: relative;
+        top: 2px;
+        z-index: 0;
+    }
+
+    .start-image {
+        width: 100%; 
+        z-index: -2;
+        height: 430px;
+        border-radius: 0;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 17px black;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(17, 16, 16);
+        margin: 20px auto 0 auto;
+        color: rgb(255, 55, 0);
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+    
+    .contacts {
+        text-align: center;
+        display: block;
+    }
+
+    .register {
+        margin: 15px auto;
+    }
+
+    .shop {
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        margin-right: 10px;
+        animation-name: shop;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        float: left;    
+    }
+    
+
+    .courses {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-right: 10px;
+        animation-name: courses;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        float: left;
+    }
+}
